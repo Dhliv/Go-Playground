@@ -1,4 +1,4 @@
-package RandomThings
+package Essentials
 
 import (
 	"fmt"

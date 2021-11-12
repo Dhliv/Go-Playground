@@ -19,7 +19,7 @@ func scanf(f string, a ...interface{}) {
 	fmt.Fscanf(rdr, f, a...)
 }
 
-func a() {
+func main() {
 	var s string
 	scanf("%s\n", &s)
 

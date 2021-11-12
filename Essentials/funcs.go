@@ -1,8 +1,8 @@
-package RandomThings
+package Essentials
 
 import "fmt"
 
-func prnt(msg *string, aux int) { // Funcs by defect pass copies of tyhe data.
+func prnt(msg *string, aux int) { // Funcs by defect pass copies of the data.
 	*msg = "David Henao"
 	fmt.Println(*msg, aux)
 }
@@ -51,7 +51,7 @@ func (p person) greet() int { // This is a method, and its owner its person stru
 	return 0
 }
 
-func mainn() { // Same as variables in name convention, first letter in upper means its public, otherwhise ies private
+func mainn() { // Same as variables in name convention, first letter in upper means its public, otherwhise is private
 	var name string = "David"
 	prnt(&name, 123) // pass the position of memory.
 	a := multType("D", "av", "i", "d", 12)
@@ -69,8 +69,8 @@ func mainn() { // Same as variables in name convention, first letter in upper me
 	}
 	fmt.Println(d)
 
-	var lambda func() = func() { // The best practice for this is to provide the paramaters its are used.
-		// Is like that becasue with concurrency the things could havae an odd behaviour.
+	var lambda func() = func() { // The best practice for this is to provide the paramaters that are used.
+		// Is like that becasue with concurrency the things could have an odd behaviour.
 		fmt.Println("Lambda")
 	}
 
