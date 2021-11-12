@@ -15,7 +15,7 @@ func main4() {
 
 	c := [...]int{1, 2, 3}
 	d := &c[0]
-	e := &c[1] // we cant do pointers arithmetic, and dont do that sooooooo idc
+	e := &c[1] // we cant do pointers arithmetic.
 
 	fmt.Printf("C: %v, d: %v and e: %v\n", c, d, e)
 
@@ -23,5 +23,5 @@ func main4() {
 	t.left = new(str)
 	fmt.Println(t.left.left) // we dont need to complicate ourselves with deferencing the pointer inside a struct.
 
-	//we hace to be careful when dealing with slices and maps, cause we cant make a copy of them, we are always referencing them.
+	//we have to be careful when dealing with slices and maps, cause we cant make a copy of them, we are always referencing them.
 }

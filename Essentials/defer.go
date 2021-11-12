@@ -8,7 +8,7 @@ import (
 func panicking() {
 	defer func() {
 		if err := recover(); err != nil {
-			// we cant invoke recover wiouth defer, cause the behaviour of panic will cause that we dont catcht the exceptions
+			// we cant invoke recover without defer, 'cause the behaviour of panic will cause that we dont catch the exceptions
 			if err == "DIVISION BY 0 IS NOT ALLOWED" {
 				fmt.Println("FOUND DIVISION BY 0") // we handle the exception that can trigger.
 			} else { // we print an error log in case that we cant handle it, and make a panic alert to make the program stops.
@@ -21,7 +21,7 @@ func panicking() {
 	b, c := 1, 0
 	var alert string = "DIVISION BY 0 IS NOT ALLOWED"
 	if c == 0 {
-		panic(alert) // It just braks down the app, and its ecxecuted after the defer actions
+		panic(alert) // It just break down the app, and its executed after the defer actions
 	} else {
 		fmt.Println(b / c)
 	}
@@ -34,7 +34,7 @@ func main3() {
 	defer fmt.Println("end")
 
 	a := "algo"
-	defer fmt.Println(a) // defer saves the changes until its executed, but dont consider changes after call it.
+	defer fmt.Println(a) // defer saves the changes until its executed, but it doesn't consider changes after we call it.
 	a = "change"
 	panicking()
 }

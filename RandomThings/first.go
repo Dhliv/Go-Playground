@@ -24,7 +24,7 @@ type st struct {
 	texto string `i can put anything that I want` // This is a tag
 }
 
-func main2() {
+func First() {
 	var x int64            // var name and type.
 	const a int = 42       // constants have to be assigned in compile time, not after that or we will get an error.
 	var Something int = 32 // with this name (first letter in uppercase, the variable gets exported)

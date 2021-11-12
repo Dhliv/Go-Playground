@@ -6,6 +6,8 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+
+	"github.com/Dhliv/Go-Playground/Essentials"
 )
 
 var rdr *bufio.Reader = bufio.NewReader(os.Stdin)
@@ -22,6 +24,9 @@ func scanf(f string, a ...interface{}) {
 func main() {
 	var s string
 	scanf("%s\n", &s)
+	printf("Lo que escribió fue: %s\n", s)
 
 	wr.Flush()
+
+	Essentials.Interfaz()
 }
