@@ -14,7 +14,7 @@ import (
 //Hello is a C binding to the Hello World "C" program. As a Go user you could
 //use now the Hello function transparently without knowing that it is calling
 //a C function
-func Hello() error {
+func hello() error {
 	_, err := C.Hello() //We ignore first result as it is a void function
 	if err != nil {
 		return errors.New("error calling Hello function: " + err.Error())
@@ -23,7 +23,7 @@ func Hello() error {
 	return nil
 }
 
-func mainF() {
+func CGOTest() {
 	//Call to void function without params
 	err := Hello()
 	if err != nil {

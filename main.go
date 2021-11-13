@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Dhliv/Go-Playground/Essentials"
+	"github.com/Dhliv/Go-Playground/CGO"
 )
 
 var rdr *bufio.Reader = bufio.NewReader(os.Stdin)
@@ -22,11 +22,10 @@ func scanf(f string, a ...interface{}) {
 }
 
 func main() {
-	var s string
-	scanf("%s\n", &s)
-	printf("Lo que escribió fue: %s\n", s)
+	// var s string
+	// scanf("%s\n", &s)
+	// printf("Lo que escribió fue: %s\n", s)
+	// wr.Flush()
 
-	wr.Flush()
-
-	Essentials.Interfaz()
+	CGO.CGOTest()
 }
