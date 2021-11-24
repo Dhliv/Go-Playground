@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Dhliv/Go-Playground/CGO"
+	"github.com/Dhliv/Go-Playground/Essentials"
 )
 
 var rdr *bufio.Reader = bufio.NewReader(os.Stdin)
@@ -27,5 +27,5 @@ func main() {
 	// printf("Lo que escribió fue: %s\n", s)
 	// wr.Flush()
 
-	CGO.CGOTest()
+	Essentials.GoRoutinesAndObjects()
 }
