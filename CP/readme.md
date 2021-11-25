@@ -1,0 +1,1 @@
+Aquí colocaré todo lo relacinado a cosas de Programación Competitiva, como algoritmos, estructuras de datos, etc.
