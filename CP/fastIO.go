@@ -20,3 +20,7 @@ func Scanf(f string, a ...interface{}) {
 func Flush() {
 	wr.Flush()
 }
+
+func Print(val interface{}) {
+	fmt.Fprintf(wr, "%v\n", val)
+}
