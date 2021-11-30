@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-// We got to execute _go test_ inside this folder, but be careful, we need a module of the proyect.
+// We got to execute _go test_ inside this folder, but be careful, we NEED a module of the proyect.
 // If you dont export the functions that execute the tests, they will not get evaluated.
 
 // ! In order to get the coverage of the testing, we NEED both files (the test and the file to test)
