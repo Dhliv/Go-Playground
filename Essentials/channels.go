@@ -16,8 +16,8 @@ func message(text string, c chan string) {
 }
 
 func Channels() {
-	c := make(chan string, 1)
-	c2 := make(chan string, 2)
+	c := make(chan string, 1)  // This is a buffered channel of size 1.
+	c2 := make(chan string, 2) // The buffered channels will block the subroutine if it gets additional data > its size.
 	c2 <- "Mensaje1"
 	c2 <- "Mensaje2"
 
